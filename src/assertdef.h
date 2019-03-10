@@ -79,4 +79,10 @@ typedef struct _assertlog {
 #define __assert_skip_eq(actual, expected) \
 	((actual) != (expected) ? ASSERT_SKIP : ASSERT_PASS)
 
+/* (integer, integer, mode -> assertop) */
+#define __assert_cmp(actual, expected, mode)
+
+/* (integer, integer, mode -> assertop) */
+#define __assert_skip_cmp(actual, expected, mode)
+
 #endif 	/* _ASSERTDEF_H */
